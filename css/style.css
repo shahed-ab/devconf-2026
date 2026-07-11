@@ -57,8 +57,7 @@ body {
 }
 
 .logo {
-  font-weight: bold;
-  font-size: 15px;
+  height: 30px;
 }
 
 .nav-links {
@@ -172,9 +171,8 @@ body {
 /*pricing*/
 
 .pricing {
-  padding: 70px 50px;
   text-align: center;
-  border-top: 2px dotted #3355ee;
+  padding: 70px 50px;
 }
 
 .pricing h2 {
@@ -182,21 +180,24 @@ body {
   margin-bottom: 5px;
 }
 
-.price-grid {
+.subtext {
+  color: #6b7280;
+  margin-bottom: 40px;
+}
+
+.price-row {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
-  max-width: 1000px;
-  margin: 30px auto 0 auto;
 }
 
 .price-card {
+  background-color: #fafafa;
   border: 1px solid #e5e7eb;
-  border-radius: 14px;
-  padding: 30px 25px;
+  border-radius: 12px;
+  padding: 25px;
+  width: 280px;
   text-align: left;
-  width: 30%;
 }
 
 .price-card h2 {
@@ -204,19 +205,33 @@ body {
   margin: 10px 0 2px 0;
 }
 
+.plan-name {
+  font-size: 13px;
+  font-weight: bold;
+  color: #6b7280;
+}
+
+.per {
+  color: #6b7280;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
 .price-card ul {
   list-style: none;
-  margin: 20px 0;
+  padding: 15px 0;
+  border-top: 1px solid #e5e7eb;
+  margin-bottom: 20px;
 }
 
 .price-card ul li {
   font-size: 14px;
-  padding: 8px 0;
-  border-bottom: 1px solid #eee;
+  padding: 6px 0;
 }
 
+/* the middle "Pro" card */
 .price-card-dark {
-  background-color: #101425;
+  background-color: #0b0e17;
   color: white;
   border: none;
 }
@@ -225,18 +240,33 @@ body {
   color: #3355ee;
 }
 
-.price-card-dark .gray-text {
+.price-card-dark .per,
+.price-card-dark ul {
   color: #9ca3af;
+  border-top: 1px solid rgba(255,255,255,0.15);
 }
 
-.price-card-dark ul li {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
-}
-
-.plan-name {
-  font-size: 13px;
+/* buttons */
+.btn-outline {
+  width: 100%;
+  padding: 10px;
+  background: white;
+  border: 2px solid #3355ee;
+  color: #3355ee;
+  border-radius: 8px;
   font-weight: bold;
-  color: #6b7280;
+  cursor: pointer;
+}
+
+.btn-blue {
+  width: 100%;
+  padding: 10px;
+  background: #3355ee;
+  border: none;
+  color: white;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
 }
 
 /*faq*/
@@ -275,43 +305,28 @@ body {
 }
 
 /*footer*/
-
 .footer {
   background-color: #0b0e17;
   color: #9ca3af;
-  padding: 30px 50px 20px 50px;
-}
-
-.footer .logo {
-  color: white;
-}
-
-.footer-top {
+  padding: 20px 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 20px;
-}
-
-.social-icons {
-  display: flex;
-  gap: 20px;
-}
-
-.social-icons img {
-  width: 20px;
-  height: 20px;
-}
-
-.footer hr {
-  border: none;
-  border-top: 1px solid rgba(255, 255, 255, 0.15);
-  margin-bottom: 15px;
-}
-
-.footer-copyright {
-  text-align: center;
   font-size: 14px;
+}
+
+.footer-links {
+  display: flex;
+  gap: 25px;
+}
+
+.footer-links a {
+  color: #9ca3af;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  color: white;
 }
 
 /*mobile screens*/
